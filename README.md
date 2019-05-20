@@ -20,15 +20,15 @@ During the enumeration of these different concepts, I made it a point to
 contrast the idealistic academic nature of these with the practical nature
 found in the wild. In summary, life is a jungle of chaos.
 
-# RSpec and Rails
+# RSpec and Ruby
 Incorporate `RSpec` as denoted over
-[here](https://github.com/rspec/rspec-rails).
+[here](https://github.com/rspec/rspec).
 
 Running `rspec --init` will create:
 * `.rspec`
-* `spec/rails_helper` or `spec/spec_helper`, depending on version `rspec`
+* `spec/spec_helper`
 
-`.rspec` allows us to add a variety of commandline options that we would
+`.rspec` allows us to add a variety of command line options that we would
 like to run by default. Here is a sample:
 ```
 --color
@@ -44,8 +44,14 @@ accordingly.
 [Here](https://relishapp.com/rspec/rspec-core/docs/command-line) is a link
 for more options to explore!
 
-I provided a basic code example on github to satiate your appetite for more
-over [here](https://github.com/Ajwah/w8d1).
+# RSpec and Rails
+Incorporate `RSpec` as denoted over
+[here](https://github.com/rspec/rspec-rails).
+
+`rails generate rspec:install`
+
+In addition to the files above, it will also create `spec/rails_helper.rb` that 
+ensures your `Rails` environment is loaded as it runs the `spec`s.
 
 # RSpec - basic syntax and fundamentals
 
