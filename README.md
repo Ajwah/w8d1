@@ -94,22 +94,22 @@ RSpec.describe Auction, :type => :model do
   end
 
   it "is not valid without a title" do
-    subject.title = @invalid_title
+    subject.title = invalid_title
     expect(subject).to_not be_valid
   end
 
   it "is not valid without a description" do
-    subject.description = @invalid_description
+    subject.description = invalid_description
     expect(subject).to_not be_valid
   end
 
   it "is not valid without a start_date" do
-    subject.start_date = @invalid_date
+    subject.start_date = invalid_date
     expect(subject).to_not be_valid
   end
 
   it "is not valid without a end_date" do
-    subject.end_date = @invalid_date
+    subject.end_date = invalid_date
     expect(subject).to_not be_valid
   end
 end
@@ -129,7 +129,7 @@ Rspec.describe Auction do
 
   subject do
     # kindly take note that this is a fictitious example that does not correspond with the current code base as `Auction` model has different attributes over here
-    described_class.new(auction: @auctioneer, clerk: @clerk, bidders: @bidders)
+    described_class.new(auction: auctioneer, clerk: clerk, bidders: bidders)
   end
 
   before do
